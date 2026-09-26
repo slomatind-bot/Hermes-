@@ -3,90 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dormidont — сайт-визитка</title>
-  <meta name="description" content="Инженер, разработчик и оптимизатор процессов. Telegram-боты, сайты-визитки и автоматизация." />
+  <title>Воскресная школа — Вера, дружба, приключения</title>
+  <meta name="description" content="Воскресная школа для подростков 12–15 лет: уроки, события, лагерь ЛОЗА." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav container">
-      <a href="#" class="logo">Dormidont<span>.</span></a>
+      <a href="#home" class="logo">Воскресная<span> школа</span></a>
       <div class="nav-links">
-        <a href="#about">Обо мне</a>
-        <a href="#services">Услуги</a>
+        <a href="#home">Главная</a>
+        <a href="#events">События</a>
+        <a href="#lessons">Уроки</a>
+        <a href="#homework">Домашние задания</a>
+        <a href="#tests">Тесты</a>
+        <a href="#camp">Лагерь ЛОЗА</a>
         <a href="#contact">Контакты</a>
       </div>
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="container hero-inner">
-      <p class="hero-kicker">Привет, я</p>
-      <h1>Dormidont</h1>
-      <p class="subtitle">Инженер. Разработчик. Оптимизатор процессов.</p>
+      <p class="hero-kicker">Для подростков 12–15 лет и их родителей</p>
+      <h1>Воскресная <span class="accent">школа</span></h1>
+      <p class="subtitle">Вера, дружба, приключения</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Связаться со мной</a>
-        <a href="#services" class="btn btn-ghost">Что я делаю</a>
+        <a href="#events" class="btn btn-primary">Ближайшие события</a>
+        <a href="#contact" class="btn btn-ghost">Связаться с нами</a>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section">
+  <section class="section">
     <div class="container">
-      <h2 class="section-title">Обо мне</h2>
-      <div class="about-grid">
-        <p>
-          Днём внедряю бережливое производство на заводе — планирую изготовление КПТ,
-          контролирую поставку деталей и применяю принципы Дао Тойота. В свободное время
-          создаю веб-проекты и Telegram-ботов, превращая системный подход инженера в
-          работающие цифровые решения. Цель — объединить производство и технологии.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Услуги</h2>
+      <h2 class="section-title">Ближайшие события</h2>
       <div class="cards">
         <article class="card">
-          <div class="card-icon">🤖</div>
-          <h3>Разработка Telegram-ботов</h3>
-          <p>Автоматизация бизнес-процессов через ботов: напоминания, интеграции, парсинг данных. От простых скриптов до сложных рабочих процессов.</p>
+          <div class="card-icon">📅</div>
+          <h3>Воскресное занятие</h3>
+          <p>Каждое воскресенье — общая встреча, урок и общение в кругу друзей.</p>
         </article>
         <article class="card">
-          <div class="card-icon">🌐</div>
-          <h3>Создание сайтов-визиток</h3>
-          <p>Быстрые, адаптивные и современные лендинги. Чистый код, продуманный дизайн, готовность к работе за считанные дни.</p>
+          <div class="card-icon">🍽</div>
+          <h3>Встреча перед причастием</h3>
+          <p>Проходит среди месяца — вместе готовимся и разбираем вопросы.</p>
         </article>
         <article class="card">
-          <div class="card-icon">♻️</div>
-          <h3>Консультации по оптимизации процессов</h3>
-          <p>Применение бережливого производства (Дао Тойота) для малого бизнеса и стартапов. Устранение потерь, ускорение процессов.</p>
+          <div class="card-icon">🏠</div>
+          <h3>Встреча дома у Ефремовых</h3>
+          <p>Тёплая домашняя встреча: игры, угощение и разговоры по душам.</p>
         </article>
         <article class="card">
-          <div class="card-icon">⚙️</div>
-          <h3>Автоматизация рутинных задач</h3>
-          <p>Скрипты, парсеры и интеграции, которые экономят часы работы. Освободите время для того, что действительно важно.</p>
+          <div class="card-icon">⛪️</div>
+          <h3>Поездка в Троицу</h3>
+          <p>Едем в гости в дружественную церковь — совместное общение.</p>
         </article>
       </div>
+
+      <h3 class="mini-title">А ещё у нас есть</h3>
+      <div class="activities">
+        <div class="activity"><span>🏕</span> Зимний и летний лагерь ЛОЗА</div>
+        <div class="activity"><span>🌳</span> Прогулки в парке</div>
+        <div class="activity"><span>⛸</span> Катание на коньках</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">События</h2>
+
+      <h3 class="mini-title">Регулярные занятия</h3>
+      <div class="table-wrap">
+        <table class="schedule">
+          <thead>
+            <tr><th>Событие</th><th>Когда</th><th>Место</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>📅 Воскресное занятие</td><td>Каждое воскресенье</td><td>Церковь</td></tr>
+            <tr><td>🍽 Встреча перед причастием</td><td>Среди месяца</td><td>Церковь</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="mini-title">Специальные мероприятия</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🍽</div>
+          <h3>Причастие</h3>
+          <p>Встреча перед причастием — подготовка и общение.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🏠</div>
+          <h3>У Ефремовых</h3>
+          <p>Домашняя встреча с играми, угощением и тёплой атмосферой.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">⛪️</div>
+          <h3>Поездка в Троицу</h3>
+          <p>Дружественная церковь, совместное богослужение и общение.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🏕</div>
+          <h3>Лагерь ЛОЗА</h3>
+          <p>Зимний и летний — духовные встречи, игры, спорт.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🌳</div>
+          <h3>Прогулки в парке</h3>
+          <p>Свежий воздух, прогулки и разговоры по душам.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">⛸</div>
+          <h3>Катание на коньках</h3>
+          <p>Зимние развлечения всей группой.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="lessons" class="section">
+    <div class="container">
+      <h2 class="section-title">Уроки</h2>
+      <p class="placeholder">📚 Материалы уроков появятся здесь. Следите за обновлениями!</p>
+      <p class="placeholder-note">Скоро здесь будут карточки с датой, темой и материалами урока.</p>
+    </div>
+  </section>
+
+  <section id="homework" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Домашние задания</h2>
+      <p class="placeholder">📝 Новые задания будут публиковаться каждую неделю.</p>
+    </div>
+  </section>
+
+  <section id="tests" class="section">
+    <div class="container">
+      <h2 class="section-title">Тесты</h2>
+      <p class="placeholder">✅ Тесты по пройденным темам появятся здесь.</p>
+    </div>
+  </section>
+
+  <section id="camp" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Лагерь ЛОЗА</h2>
+      <p class="camp-desc">Духовные встречи, игры, спорт, новые друзья</p>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">❄️</div>
+          <h3>Зимний лагерь</h3>
+          <p>Каникулы вместе: снег, игры и тёплые вечера с друзьями.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">☀️</div>
+          <h3>Летний лагерь</h3>
+          <p>Лето с друзьями: спорт, походы и новые открытия.</p>
+        </article>
+      </div>
+      <p class="placeholder">🗓 Программа и регистрация появятся здесь.</p>
     </div>
   </section>
 
   <section id="contact" class="section">
     <div class="container contact-inner">
-      <h2 class="section-title">Контакты</h2>
-      <p class="contact-text">Готовы обсудить проект или просто познакомиться? Напишите:</p>
+      <h2 class="section-title">Свяжитесь с нами</h2>
+      <p class="contact-text">Будем рады ответить на ваши вопросы о занятиях и лагере:</p>
       <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:dormidontis@ya.ru">✉️ Email</a>
-        <a class="btn btn-ghost" href="https://t.me/slomatin" target="_blank" rel="noopener">💬 Telegram</a>
+        <div class="contact-item">📍 <strong>Адрес:</strong> скоро будет добавлен</div>
+        <div class="contact-item">📞 <strong>Телефон:</strong> скоро будет добавлен</div>
+        <div class="contact-item">✉️ <strong>Email:</strong> скоро будет добавлен</div>
       </div>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Dormidont. Сделано с ❤️</p>
+      <p>© 2026 Воскресная школа · Вера, дружба, приключения</p>
     </div>
   </footer>
 </body>
