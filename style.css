@@ -557,6 +557,92 @@ body {
   margin-bottom: 0;
 }
 
+/* --- звёздочки (доска почёта) --- */
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin: -10px 0 28px;
+}
+
+.leaderboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.leaderboard-card {
+  background: var(--bg);
+  border: 1px solid rgba(26, 43, 34, 0.07);
+  border-radius: var(--radius);
+  padding: 26px 24px;
+  box-shadow: var(--shadow);
+}
+
+.leaderboard-card h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+}
+
+.top-list,
+.stars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rank,
+.star-row {
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #f6fcf8;
+  font-size: 1rem;
+}
+
+.rank.gold,
+.star-row.gold {
+  background: #fff7e0;
+  border: 1px solid #f0c94a;
+}
+
+.rank.silver,
+.star-row.silver {
+  background: #f3f6fa;
+  border: 1px solid #c0c8d4;
+}
+
+.rank.bronze,
+.star-row.bronze {
+  background: #fdf0e3;
+  border: 1px solid #e0a878;
+}
+
+.breakdown {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.legend-card {
+  background: #eefaf2;
+  border: 1px solid rgba(46, 158, 91, 0.2);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  box-shadow: var(--shadow);
+}
+
+.legend-card h4 {
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.legend-card p {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
 /* --- responsive --- */
 @media (max-width: 760px) {
   .nav {
